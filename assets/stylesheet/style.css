@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Main CSS */
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.padding{
+    padding: 50px;
+}
+h2{
+    font-size: 1.5rem;
+}
+.margin{
+    margin-top: 1rem;
+}
+.margin-left{
+    margin-left: 1.5rem;
+}
+.margin-bottom{
+    margin-bottom: 1rem;
+}
+i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+strong{
+    font-weight: 900;
+}
+/* Header-Section */
+/* First-Section */
+.btn-type-1{
+    border: 2px solid black;
+    padding: 5px 5px;
+    border-radius: 100px;
+    width: 25%;
+    background: transparent;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    height: 100vh;
+}
+.image{
+    background: url("../media/home-img.jpg");
+    background-size: cover;
+}
+.about-section{
+    display: grid;
+    align-content: center;
+    background: rgb(240, 214, 218);
+}
+.about-section p{
+    color: rgb(94, 80, 80);
+}
+.text-1{
+    font-size: 2rem;
+}
+.one-columnn{
+    grid-template-columns: 1fr;
+}
+/* Second-Section */
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.second-section-image{
+    background: url("../media/about-img.jpg");
+    background-size: cover;
+}
+.container-3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.second-section-text h2,p{
+    color: black;
+}
+.my-skills{
+    background: rgb(228, 155, 47);
+}
+.my-skills h4{
+    color: white;
+}
+.second-section-text p{
+    color: black;
+}
+.container-2 h2{
+    font-size: 2rem;
+}
+.container-3 h4{
+    font-size: 2rem;
+}
+/* Third-Section */
+.container-4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.container-4 i{
+    color: white;
+}
+.container-4 p{
+    line-height: 1.5;
+}
+.col-1{
+    background: rgb(228, 155, 47);
+    text-align: center;
+    color: white;
+}
+.col-2{
+    background: rgb(245, 107, 56);
+    text-align: center;
+    color: white;
+}
+.col-3{
+    background: rgb(8, 8, 5);
+    text-align: center;
+}
+.col-4{
+    background: rgb(15, 13, 13);
+    text-align: center;
+}
+.col-3,.col-4 h2{
+    color: white;
+}
+/* Fourth-Section */
+.container-5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-4-image{
+    background: url("../media/experience-img.jpg");
+    background-size: cover;
+}
+.my-experiences{
+    background: rgb(245, 107, 56);
+    color: white;
+}
+.my-experiences h2{
+    font-size: 2rem;
+}
+/* Fifth-Section */
+.container-6{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-5-image{
+    background: url("../media/education-img.jpg");
+    background-size: cover;
+}
+.my-education{
+    background: rgb(228, 155, 47);
+    color: white;
+}
+.my-education h2{
+    font-size: 2rem;
+}
+.fas{
+    font-size: 1rem;
+}
+/* Sixth-Section */
+.container-7{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.btn-type-2{
+    background:white;
+    display: block;
+    border-radius: 100px;
+    padding: 10px 80px;
+    margin-top: 1rem;
+}
+.section-6-image{
+    background: url("../media/contact-img.jpg");
+    background-size: cover;
+}
+.form-section{
+    grid-column: 1/span 2;
+    background: rgb(245, 107, 56);
+}
+.form-section h2{
+    color: white;
+    font-size: 2rem;
+}
+.input-class{
+    border-style: none;
+    background: rgb(245, 107, 56);
+    color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(235, 164, 12);
+    width: 100%;
+}
+.my-office{
+    background: rgb(27, 23, 23);
+    color: white;
+}
+.my-office h2,p{
+    color: white;
+}
+.Email{
+    display: block;
+}
+::placeholder{
+    color: rgb(214, 209, 209);
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Map=Section */
+.map{
+    background: rgb(245, 107, 56);
+    display: flex;
+    justify-content: center;
+}
+/* Footer */
+.footer{
+    text-align: center;
+}
+.icons{
+    display: block;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: silver;
+}
+/* Extra */
+.date{
+    color: rgb(18, 18, 48);
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.heading{
+    font-size: 1.5rem;
+}
+.btn:hover{
+    background: rgb(241, 136, 88);
+}
+
+/* Media Query */
+@media all and (max-width:768px){
+.container{
+    grid-template-columns: 1fr;
+    height: auto;
+}
+.container-2{
+    grid-template-columns: 1fr;
+}
+.container-3{
+    grid-template-columns: 1fr;
+}
+.container-4{
+    grid-template-columns: 1fr;
+}
+.container-5{
+    grid-template-columns: 1fr;
+}
+.container-6{
+    grid-template-columns: 1fr;
+}
+.container-7{
+    grid-template-columns: 1fr;
+}
+.btn-type-1{
+    width: 50%;
+}
+.image{
+    height: 60vh;
+}
+.second-section-image{
+    height: 60vh;
+}
+.section-4-image{
+    height: 60vh;
+}
+.section-5-image{
+    height: 60vh;
+}
+.section-6-image{
+    height: 60vh;
+}
+}
+
